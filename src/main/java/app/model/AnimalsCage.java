@@ -11,11 +11,8 @@ public class AnimalsCage {
     @Qualifier("dog")
     private Animal animal;
 
-    @Autowired
-    private Timer timer;
-
     public Timer getTimer() {
-        return timer;  // Возвращаем инжектированный Timer
+        return new Timer();
     }
 
     public void whatAnimalSay() {
